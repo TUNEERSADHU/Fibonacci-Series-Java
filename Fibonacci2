@@ -1,0 +1,25 @@
+import java.util.*;
+class Fibonacci2
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number before which all fibonacci series numbers have to be printed");
+        int n=sc.nextInt();
+        int f=0,l=1,i=1;
+        while(f<=n || l<=n)
+        {
+            if(i%2==1)
+            {
+                System.out.println(f);
+                f+=l;
+            }
+            else
+            {
+                System.out.println(l);
+                l+=f;
+            }
+            i++;
+        }
+    }
+}
